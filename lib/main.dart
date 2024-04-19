@@ -7,13 +7,23 @@ import core.widgets;
 import core.material;
 
 widget text = Text(
-  text: 'Type your script and press `Update`.', 
+  text: 'Some text here', 
   textAlign: "center"
 );
 
-widget main = Center(
-  child: text()
+widget node = Container(
+  height: 100.0,
+  width: 200.0,
+  color: 0xFF80ACEF,
+  child: Center(
+    child: text()
+  )
 );
+
+widget main = Center(
+  child: node()
+);
+
 """;
 
 void main() {
