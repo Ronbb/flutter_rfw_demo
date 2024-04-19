@@ -21,4 +21,4 @@ jobs:
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           baseHref: /flutter_rfw_demo/
-          customArgs: --no-tree-shake-icons
+          customArgs: "--no-tree-shake-icons --wasm"
