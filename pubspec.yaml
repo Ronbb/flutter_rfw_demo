@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  re_editor: ^0.1.0
+  re_highlight: ^0.0.3
   rfw: ^1.0.26
 
 dev_dependencies:
@@ -18,3 +20,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: RobotoMono
+      fonts:
+        - asset: fonts/RobotoMono-VariableFont_wght.ttf
