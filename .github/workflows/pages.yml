@@ -23,4 +23,4 @@ jobs:
         with:
           baseHref: /flutter_rfw_demo/
           webRenderer: canvaskit
-          customArgs: --no-tree-shake-icons && npx -y esbuild ./**/*.js --target=chrome83 --outdir=. --allow-overwrite
+          customArgs: --no-tree-shake-icons && npx -y esbuild ./flutter_bootstrap.js --target=chrome83 --outdir=. --allow-overwrite
