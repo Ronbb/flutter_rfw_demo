@@ -23,5 +23,5 @@ jobs:
           baseHref: /flutter_rfw_demo/
           webRenderer: canvaskit
           customArgs: "--no-tree-shake-icons"
-      - run: curl -fsSL https://esbuild.github.io/dl/latest | sh
-      - run: esbuild ./**/.js --target=chrome83 --outdir=. --allow-overwrite
+      - uses: actions/setup-node@v4
+      - run: npx -y esbuild ./**/*.js --target=chrome83 --outdir=. --allow-overwrite
