@@ -15,6 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
@@ -22,6 +23,4 @@ jobs:
         with:
           baseHref: /flutter_rfw_demo/
           webRenderer: canvaskit
-          customArgs: "--no-tree-shake-icons"
-      - uses: actions/setup-node@v4
-      - run: npx -y esbuild ./**/*.js --target=chrome83 --outdir=. --allow-overwrite
+          customArgs: --no-tree-shake-icons && npx -y esbuild ./**/*.js --target=chrome83 --outdir=. --allow-overwrite
